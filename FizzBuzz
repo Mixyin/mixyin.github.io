@@ -10,3 +10,14 @@ while (number < 100) {
   else
     console.log(number);
 }
+
+var size = 15;var board = ""; //board starts as an empty string
+  for (var x = 0; x < size; x++) { //increasing  horizontal component until the size of the board is reached 
+   for (var y = 0; y < size; y++) { //increasing vertical until size of board is reached  
+   if ((x + y) % 2 == 0) //all divisible by two should be blanks       
+   board += " ";  else //all non-divisible by two should be #      
+   board += "#";   
+}  
+board += "\n"; //to start new line
+}
+console.log(board)
